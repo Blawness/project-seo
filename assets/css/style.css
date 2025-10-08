@@ -168,6 +168,28 @@ h2.title{
   border-radius:999px; padding:12px 22px; font-weight:600; cursor:pointer;
 }
 
+.btn-book{
+  background:var(--accent); color:#fff; border:1px solid var(--accent);
+  transition: all 0.2s ease;
+}
+
+.btn-book:hover{
+  background:#333; border-color:#333; transform:translateY(-1px);
+}
+
+/* Make buttons with href attributes clickable */
+button[href]{
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+button[href]:hover{
+  opacity: 0.9;
+}
+
 /* Akomodasi */
 .grid-3{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
 .tag{

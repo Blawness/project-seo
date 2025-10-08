@@ -7,6 +7,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="assets/js/router.js" defer></script>
 
 </head>
 
@@ -20,10 +21,10 @@
           <div>Rocvon</div>
         </div>
         <nav class="menu" aria-label="Primary">
-          <a href="#">Tur Kami</a>
-          <a href="#">Tentang</a>
-          <a href="#">Booking</a>
-          <a href="#">FAQ</a>
+          <a href="#tours">Tur Kami</a>
+          <a href="#about">Tentang</a>
+          <a href="#booking">Booking</a>
+          <a href="#faq">FAQ</a>
         </nav>
         <div class="hamburger" aria-label="Menu"><span></span></div>
       </div>
@@ -36,8 +37,8 @@
         <h1>Jelajahi pesona<br/>destinasi karya alam</h1>
         <p>Rocvon menghadirkan paket tur terbaik di Singapura, Malaysia, Thailand, Vietnam, dan lainnya—lengkap dengan hotel & villa pilihan.</p>
         <div class="cta">
-          <button class="btn-pill">Booking sekarang</button>
-          <button class="ghost">Lihat destinasi</button>
+          <button class="btn-pill" href="#booking">Booking sekarang</button>
+          <button class="ghost" href="#tours">Lihat destinasi</button>
         </div>
       </div>
 
@@ -145,11 +146,11 @@
             <h5>Alone with nature — Vietnam</h5>
             <div class="row">
               <div class="price">$100 <span style="color:var(--muted)">/ person</span></div>
-              <div class="go" title="Pesan">
+              <button class="go btn-book" title="Pesan" href="#booking">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                   <path d="M9 5l7 7-7 7" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-              </div>
+              </button>
             </div>
           </div>
         </article>
@@ -221,7 +222,7 @@
         </article>
       </div>
 
-      <button class="see-all">Lihat semua tur</button>
+      <button class="see-all" href="#tours">Lihat semua tur</button>
     </section>
 
     <!-- Akomodasi -->
@@ -244,11 +245,11 @@
             <h5>Marina View — Singapore</h5>
             <div class="row">
               <div class="price">mulai $120 <span style="color:var(--muted)">/ malam</span></div>
-              <div class="go" title="Pesan">
+              <button class="go btn-book" title="Pesan" href="#booking">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                   <path d="M9 5l7 7-7 7" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-              </div>
+              </button>
             </div>
           </div>
         </article>
@@ -309,8 +310,8 @@
           Rocvon
         </div>
         <div class="right">
-          <a href="#">Kebijakan Privasi</a>
-          <a href="#">Syarat & Ketentuan</a>
+          <a href="#privacy" onclick="alert('Halaman sedang dalam pengembangan')">Kebijakan Privasi</a>
+          <a href="#terms" onclick="alert('Halaman sedang dalam pengembangan')">Syarat & Ketentuan</a>
           <span>© 2025 Rocvon</span>
         </div>
       </div>
